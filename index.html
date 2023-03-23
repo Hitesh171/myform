@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <title>Form </title>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <main class="container">
+        <form id="formData" acton="" method="POST">
+            <h1>Enter Your Details:</h1>
+            <div>
+            <label for="Firstname" class="field_name">Firstname:<span class="asterisk">*</span></label>
+            <input name="Firstname" type="text" placeholder="First name:" class="field" required autocomplete="off" id="first-name">
+            <p class="error hide" id="first-name-error">Please enter First Name</p>    
+        </div>
+            <div>
+            <label for="Lastname" class="field_name">Last name:<span class="asterisk">*</span></label>
+            <input name="Lastname" type="text" placeholder="Last name:"class="field" required autocomplete="off" id="last-name">
+            <p class="error hide" id="last-name-error">Please enter Last Name</p>
+        </div>
+            <div>
+            <label for="Gender" class="field_name" required autocomplete="off">Gender:<span class="asterisk">*</span></label>
+            <input type="radio" id="male" name="gender" value="male" required autocomplete="off">Male
+            <input type ="radio" id="female" name="gender" value="female" required autocomplete="off">Female
+            </div>
+             <div>
+             <label for="Language" class="field_name" required autocomplete="off"> Language:<apan class="asterisk">*</apan></label>
+             <select name="Language" id="Language" class="field" required autocomplete="off"><br>=
+             <option value="">Select a Language</option>
+             <option value="English">English
+             <option value="Hindi">Hindi
+             <option value="Dogri">Dogri
+             <option value="Kashmiri">Kashmiri
+             <option value="marathi">marathi
+             </select>
+             </div>
+             </div>
+             <div>
+                <label for="City" class="field_name">City Select:<span class="asterisk">*</span></label>
+                <select name="city" id="city"  class="field" required autocomplete="off"><br>
+                    <option value="">Select a city</option>"
+                    <option value="Jammu">Jammu</option>
+                    <option value="Kathua">Kathua</option>
+                    <option value="Udhampur">Udhampur</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Bengalore">Bengalore</option>
+                    <option value="Srinagar">Srinagar</option>
+                    </select>
+                </div>
+                <div>
+                <label for="Email" class="field_name">Email:<span class="asterisk">*</span></label>
+                <input type="email" id="email" name="email" placeholder="enter your email:" class="field"  required autocomplete="off">
+                <p class="error hide" id="email-error">Please enter a valid email address.</p>
+            </div>
+                <div>
+                    <label for="Mobile" class="field_name">Mobile:<span class="asterisk">*</span></label>
+                    <input type="tel" id="mobile" name="mobile" placeholder="Enter your Mobile number:" class="field" required autocomplete="off">
+                    <p class="error hide" id="mobile-error">Please enter a valid mobile number.</p>
+                </div>
+                 
+                  <div>
+                    <button type="submit" id="submit-btn" name="submit" value="submit" >Submit</button>
+                    
+                </div>
+                
+        </form>
+        <div class="controls">
+            <button id="show_Details" class="control-btn">Show Details</button>
+            <button id="clear_Details" class="control-btn">clear Details</button>
+            </div>
+
+        <div class="data hide"></div>
+        </main>
+        <script src="./firm.js"></script>
+       <script src="./evalid.js"></script>
+        
+        
+        
+
+    </body>
+    </html>
